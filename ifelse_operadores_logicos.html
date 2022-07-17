@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script>
-        //true || true || false = true
+        /*true || true || false = true
         if(2 == 2 || 3 >= 1 || 'a' == 'b') {
             document.write('Verdadeiro')
             
@@ -15,7 +15,29 @@
         }
 
 
-        // && = e, || = ou, ! = negação
+        && = e, || = ou, ! = negação*/
+
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite a quantidade de faltas:')
+
+        var media = 7
+        var faltas_maximas = 15
+
+        //operador lógico
+
+        /*if (nota >= media && faltas <= faltas_maximas) {
+        document.write('Aprovado')
+            //lógica
+    }   else {
+        document.write('Reprovado')
+        //lógica
+    } */
+    
+    //operador ternário
+
+    var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+    document.write(resultado)
+
     </script>
 </head>
 <body>
