@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio elementos DOM</title>
+</head>
+<body>
+    <h1>Manipulando estilo</h1>
+
+    <button type="button" onclick="mudarcor('#FF0000')" style="background-color: red; width: 30px; height: 20px;"></button>
+    <button type="button" onclick="mudarcor('#00FF00')" style="background-color: green; width: 30px; height: 20px;"></button>
+    <button type="button" onclick="mudarcor('#0000FF')" style="background-color: blue; width: 30px; height: 20px;"></button>
+
+    <div id="quadrado" style="width: 150px; height: 150px; background-color: grey; margin-top: 50px;">
+    </div>
+    <script>
+        function mudarcor(CorDeFundo){
+            document.getElementById('quadrado').style.background = CorDeFundo
+        }
+
+    </script>
+</body>
+</html>

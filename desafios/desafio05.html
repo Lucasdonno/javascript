@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05 - Javascript </title>
+    <script>
+        function cordefundo(){
+            document.getElementById('caixa').style.background = 'yellow'
+        }
+
+        function semfundo(){
+            var valorCampo = document.getElementById('caixa').value
+
+            if(valorCampo.length < 3) {
+                document.getElementById('caixa').style.background = 'red'
+            }
+            else {
+                document.getElementById('caixa').style.background = 'green'
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="caixa" type="text" onfocus="cordefundo()" onblur="semfundo()" placeholder="Digite caracteres" >
+</body>
+</html>
