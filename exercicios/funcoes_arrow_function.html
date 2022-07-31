@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*let quadrado = function(x = 5) {
+            return x * x
+        }*/
+
+        //com arrow function não precisa escrever "function"
+        /*let quadrado = (x) => { 
+            return x * x
+        }*/
+
+        //caso um único parametro esteja sendo recebido, não precisa colocar entre parenteses
+        /*let quadrado = x => x * x //return implicito
+        
+        document.write(quadrado(3))*/
+        /*
+        let parOuImpar = function(numero) {
+            
+            if(numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'impar'
+            }
+        }
+        document.write(parOuImpar(7))*/
+
+        let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'impar' //retorno implicito
+            
+        document.write(parOuImpar(156))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // utilizando let, evita possiveis bugs provindos de sobreposiçãod e variaveis
+        let serie = 'The Boys'
+
+        {
+            let serie = 'Game of Thrones'
+            console.log('dentro do bloco ' + serie)
+        }
+        console.log('fora do bloco ' + serie)
+
+
+
+
+
+
+
+        /*3 escopos:global, função e bloco
+        //var serie = 'Game of Thrones'
+
+        function x() {
+            //var serie = 'The Boys'
+            console.log(serie)
+            //console.log(serie)
+
+            if(true){
+                //console.log(serie)
+            }
+        }
+
+        
+        
+
+        if(true) {
+            //console.log(serie)
+            var serie = 'The Preacher'
+            x()
+            console.log(serie)
+        }
+        
+        console.log(serie)*/
+
+        /*if(true) {
+            //let mantem a variavel no escopo onde foi criada, não recebe hoisting
+            let serie = 'Game of Thrones'
+            console.log(serie)
+        }
+        console.log(serie)*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
