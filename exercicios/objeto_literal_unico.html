@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let assinatura = {
+            idClient: 1000,
+            descricao: 'acesso a internet',
+            status() {
+                console.log('ativo')
+            }
+        }
+
+        console.log(assinatura.descricao)
+
+        let y = assinatura
+
+        console.log(y.descricao)
+
+        ///
+
+        y.descricao = 'internet + tv + telefone'
+
+        console.log(assinatura.descricao,y.descricao)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
