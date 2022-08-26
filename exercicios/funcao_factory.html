@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let Bibicleta1 = {
+            cor: 'Branca',
+            marcha: 'única',
+            aro: 12,
+            pedalar() {
+                console.log('Método peladar executado')
+            }
+        }
+
+        console.log(Bibicleta1)
+
+
+        let BicicletaFactory = function(cor, marcha, aro, tipoPedal) {
+            return {
+                cor,
+                marcha,
+                aro,
+                tipoPedal,
+                    pedalar() {
+                    console.log('Método peladar executado')
+                }
+            }
+        }
+
+        let Bicicleta3 = BicicletaFactory('Vermelha', '18', 26, 'Plástico')
+        console.log(Bicicleta3)
+        let Bicicleta4 = BicicletaFactory('Preta', '21', 29, 'Ferro')
+        console.log(Bicicleta4)
+
+        //console.log(`Cor: ${Bicicleta3.cor}`)
+        //Bicicleta3.pedalar()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
