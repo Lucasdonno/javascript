@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dlar Home Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Adicionando estilos ao menu */
+        .navbar {
+            background-color: #b18408;
+            /* Cor rose */
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        /* Adicionando estilos ao resto da página */
+        body {
+            background-color: #b18408;
+            /* Cor marrom */
+        }
+
+        /* Adicionando estilos para versão mobile */
+        @media (max-width: 768px) {
+            .navbar {
+                background-color: #b18408;
+                /* Cor marrom */
+            }
+
+            body {
+                background-color: #ff69b4;
+                /* Cor rose */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Dlar Home Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Produtos</h1>
+        <p>Aqui estão nossos produtos à venda.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="produto1.jpg" alt="Imagem do produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabeceira</h5>
+                        <p class="card-text">Descrição
+                        <p class="card-text">Preço: R$100</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="produto2.jpg" alt="Imagem do produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 2</h5>
+                        <p class="card-text">Descrição</p>
+                        <p class="card-text">Preço: R$200</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="produto3.jpg" alt="Imagem do produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 3</h5>
+                        <p class="card-text">Descrição</p>
+                        <p class="card-text">Preço: R$300</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Sobre</h1>
+        <p>Informações sobre a nossa loja.</p>
+        <h1>Contato</h1>
+        <p>Informações de contato da nossa loja.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

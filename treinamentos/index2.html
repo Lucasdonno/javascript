@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desenho de Moldura de Parede</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.0.0-rc.6/fabric.min.js"></script>
+  <script>
+    // Inicializando o canvas
+    var canvas = new fabric.Canvas('canvas');
+
+    // Adicionando evento de clique para criar retângulos
+    canvas.on('mouse:down', function(event) {
+      var rect = new fabric.Rect({
+        left: event.clientX,
+        top: event.clientY,
+        width: 50,
+        height: 50,
+        fill: '#ff69b4',
+        stroke: 'black',
+        strokeWidth: 2
+      });
+      canvas.add(rect);
+    });
+
+    // Adicionando evento de duplo clique para calcular área
+    canvas.on('mouse:dblclick', function() {
+      var area = 0;
+      canvas.getObjects().forEach(function(object) {
+        if (object.type === 'rect') {
+          area += object.width * object.height;
+        }
+      });
+      alert('Área total: ' + area + ' metros quadrados');
+    });
+  </script>
+</head>
+<body>
+  <canvas id="canvas" width="800" height="600"></canvas>
+</body>
+</html>
